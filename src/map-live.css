@@ -1,0 +1,55 @@
+.map-canvas--loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  color: #a2b4a9;
+  font-size: 8px;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  background: radial-gradient(ellipse at 50% 48%, rgba(82, 148, 127, .22), transparent 27%), radial-gradient(circle at 50% 50%, #172a2a, #0b1517 61%);
+}
+
+.map-loading-orbit {
+  position: relative;
+  display: block;
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(131, 223, 194, .42);
+  border-radius: 50%;
+  animation: map-loading-turn 8s linear infinite;
+}
+
+.map-loading-orbit::before,
+.map-loading-orbit::after {
+  position: absolute;
+  inset: 7px -9px;
+  border: 1px solid rgba(185, 237, 142, .32);
+  border-radius: 50%;
+  content: "";
+  transform: rotate(44deg);
+}
+
+.map-loading-orbit::after {
+  inset: 14px -4px;
+  border-color: rgba(233, 181, 116, .42);
+  transform: rotate(-39deg);
+}
+
+.map-loading-orbit i {
+  position: absolute;
+  top: -2px;
+  left: 31px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #e9b574;
+  box-shadow: 0 0 12px rgba(233, 181, 116, .82);
+}
+
+@keyframes map-loading-turn { to { transform: rotate(1turn); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .map-loading-orbit { animation: none; }
+}

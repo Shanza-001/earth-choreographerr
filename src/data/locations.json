@@ -1,0 +1,62 @@
+[
+  {
+    "id": "quetta",
+    "name": "Quetta",
+    "country": "Pakistan",
+    "coordinates": [66.975, 30.1798],
+    "changeType": "Land subsidence",
+    "move": "subsidence",
+    "sampleLabel": "Illustrative sample data",
+    "periods": [
+      {
+        "date": "2024-04-01",
+        "label": "Sample epoch A",
+        "headline": "The surface holds its first note.",
+        "caption": "Baseline frame in an illustrative, non-measured story."
+      },
+      {
+        "date": "2025-04-01",
+        "label": "Sample epoch B",
+        "headline": "A slow downward pulse comes into view.",
+        "caption": "Follow-up frame in an illustrative, non-measured story."
+      }
+    ],
+    "what": "This demonstration follows a question, not a measurement: what might repeated radar observations reveal where groundwater pumping could compact sediment beneath a growing city?",
+    "howMuch": {
+      "label": "Surface motion",
+      "value": "Illustrative only",
+      "unit": "No real displacement estimate"
+    },
+    "drivers": [
+      "Groundwater withdrawal can lower pore-water pressure.",
+      "Compressible sediments may settle as support changes.",
+      "Local geology and water use determine where risk concentrates."
+    ],
+    "radarChannel": {
+      "name": "Repeat-pass InSAR · L-band concept",
+      "description": "Compare the phase of radar echoes from repeat passes to estimate relative surface motion. A real result needs co-registered products, processing, uncertainty checks, and local validation."
+    },
+    "affected": "Households, roads, water systems, and essential services may be exposed where ground movement overlaps with dense development. This is a general impact pathway, not a site-specific impact assessment.",
+    "comparison": {
+      "beforeLabel": "Before · sample scene",
+      "afterLabel": "After · sample scene"
+    },
+    "nisarBrowseRecords": [
+      {
+        "productId": "NISAR_L2_PR_GUNW_032_092_D_073_033_2000_SH_20261006T141233_20261006T141307_20261018T141233_20261018T141307_P05023_N_F_J_001",
+        "productFamily": "GUNW",
+        "level": "L2",
+        "maturity": "PROVISIONAL",
+        "fileName": "NISAR_L2_PR_GUNW_032_092_D_073_033_2000_SH_20261006T141233_20261006T141307_20261018T141233_20261018T141307_P05023_N_F_J_001.h5",
+        "startTime": "2026-10-06T14:12:33Z",
+        "stopTime": "2026-10-18T14:13:07Z",
+        "catalogCheckedOn": "2026-11-14",
+        "intersectsPoint": [66.975, 30.1798],
+        "browseImage": "/assets/nisar-quetta-gunw-provisional-latlon.png",
+        "browseUrl": "https://nisar.asf.earthdatacloud.nasa.gov/BROWSE/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_032_092_D_073_033_2000_SH_20261006T141233_20261006T141307_20261018T141233_20261018T141307_P05023_N_F_J_001/NISAR_L2_PR_GUNW_032_092_D_073_033_2000_SH_20261006T141233_20261006T141307_20261018T141233_20261018T141307_P05023_N_F_J_001_LATLON.png",
+        "catalogUrl": "https://api.daac.asf.alaska.edu/services/search/param?dataset=NISAR&processingLevel=GUNW&dataMaturity=PROVISIONAL&intersectsWith=POINT%2866.975%2030.1798%29&start=2026-06-17T00%3A00%3A00Z&end=2026-10-24T23%3A59%3A59Z&output=geojson&maxResults=20",
+        "note": "ASF's November 14, 2026 PROVISIONAL GUNW catalog query returned this record with a product footprint intersecting the Quetta search point. This verifies product availability at that point only; the browse image is not a displacement estimate and does not validate the illustrative subsidence story."
+      }
+    ]
+  }
+]

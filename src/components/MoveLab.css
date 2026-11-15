@@ -1,0 +1,36 @@
+.mlab { max-width: 1280px; margin: 0 auto; }
+.mlab__lead { max-width: 620px; margin: 16px 0 0; opacity: 0.75; }
+.mlab__stage {
+  position: relative;
+  height: min(62vh, 560px);
+  min-height: 380px;
+  margin-top: 32px;
+  overflow: hidden;
+  border: 1px solid rgba(160, 190, 255, 0.18);
+  border-radius: 24px;
+  background: radial-gradient(120% 90% at 50% 0, #12214a, #060c1e);
+}
+.mlab__canvas { position: absolute; inset: 0; display: block; width: 100%; height: 100%; touch-action: pan-y; cursor: grab; }
+.mlab__canvas:active { cursor: grabbing; }
+.mlab__badge {
+  position: absolute; left: 14px; top: 14px; padding: 4px 12px; font-size: 13px; color: #cdd8f5;
+  border: 1px solid rgba(160, 190, 255, 0.25); border-radius: 99px; background: rgba(8, 14, 32, 0.7);
+  backdrop-filter: blur(8px);
+}
+.mlab__bar {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 12px; padding: 12px 16px;
+  border: 1px solid rgba(160, 190, 255, 0.18); border-radius: 16px; background: rgba(12, 20, 44, 0.72);
+}
+.mlab__tabs { display: flex; flex-wrap: wrap; gap: 6px; }
+.mlab__tab {
+  padding: 6px 14px; font: inherit; font-size: 15px; color: inherit; cursor: pointer; background: none;
+  border: 1px solid rgba(160, 190, 255, 0.22); border-radius: 99px; transition: background 0.2s, color 0.2s;
+}
+.mlab__tab[aria-pressed='true'] { color: #06101f; font-weight: 600; background: var(--tab); border-color: var(--tab); }
+.mlab__play {
+  width: 40px; height: 40px; font: inherit; color: inherit; cursor: pointer; background: none;
+  border: 1px solid rgba(160, 190, 255, 0.22); border-radius: 99px;
+}
+.mlab__range { flex: 1; min-width: 140px; accent-color: #f1bb74; }
+.mlab__tab:focus-visible, .mlab__play:focus-visible, .mlab__range:focus-visible { outline: 2px solid #83dfc2; outline-offset: 3px; }
+.mlab__read { max-width: 760px; min-height: 3.4em; margin: 16px 0 0; opacity: 0.85; }
